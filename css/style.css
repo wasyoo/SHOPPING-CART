@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #7ec855;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.purchase_cart {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 65%;
+    overflow: hidden;
+}
+.purchase_cart h3 {
+    font-size: 20px;
+    padding: 20px 20px 20px;
+    font-weight: 200;
+    border-bottom: 1px solid #E5E5E5;
+    background-color: aliceblue;
+}
+.shopping_bag {
+    color: #5f5e5e;
+    overflow: hidden;
+}
+.shopping_bag .product {
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.product_img img {
+    width: 160px;
+    height: 90px;
+}
+.product_qantity .qantity {
+    margin: 0 10px;
+}
+.fav i {
+    cursor: pointer;
+}
+.fav .fas {
+    color: #c82332;
+    transition: all 1s;
+}
+.fav .far {
+    transition: all 1s;
+}
+.quantity {
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.price {
+    font-size: 18px;
+    font-weight: 600;
+}
+@media screen and (max-width: 991px) {
+    body {
+        align-items: flex-start;
+        height: auto;
+    }
+    .purchase_cart {
+        width: 75%;
+        overflow: visible;
+    }
+    .purchase_cart h3 {
+        text-align: center;
+        position: sticky;
+        top :0;
+        left:50%;
+        z-index: 1000;
+        background-color: aliceblue;
+    }
+    .shopping_bag .product {
+        position: relative;
+    }
+    .product .delete {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .product .fav {
+        position: absolute;
+        top: 10px;
+        left: 70px;
+    }
+    .product .product_img {
+        margin: 50px auto 10px;
+        text-align: center;
+    }
+    .product_img img {
+        width: 80%;
+        height: 200px;
+    }
+    .product_info {
+        text-align: center;
+    }
+    .product_info strong:nth-child(1) {
+        font-size: 28px
+    }
+    .product_quantity {
+        text-align: center;
+        margin: 20px 0 0;
+    }
+    .product_price {
+        text-align: center;
+        margin: 20px 0 0;
+        font-size: 25px;
+    }
+    .product_price span {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .purchase_cart {
+        width: 98%;
+    }
+    .product_img img {
+        width: 100%;
+        height: 250px;
+    }
+}
